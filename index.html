@@ -401,32 +401,51 @@
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
+<<<<<<< HEAD
                               <input type="text" name="name" onchange="validateForm()" class="form-control" id="name" placeholder="Your Name" >
                               <span id="msg1"  style="color: red;"></span>
+=======
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" >
+>>>>>>> origin/main
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
+<<<<<<< HEAD
                               <input type="text" class="form-control" onchange="validateForm()" name="mobilenumber" id="mobilenumber" placeholder="Your Mobile Number" >
                               <span id="msg2"  style="color: red;"></span>
+=======
+                              <input type="text" class="form-control" name="mobilenumber" id="mobilenumber" placeholder="Your Mobile Number" >
+>>>>>>> origin/main
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">  
+<<<<<<< HEAD
                               <input type="email" class="form-control" onchange="validateForm()" name="email" id="email" placeholder="Your Email" >
                               <span id="msg3" style="color: red;" ></span>
+=======
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" >
+>>>>>>> origin/main
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" >
+<<<<<<< HEAD
                               <span id="msg4"  style="color: red;"></span>
+=======
+>>>>>>> origin/main
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
+<<<<<<< HEAD
                               <textarea class="form-control" id="message"onchange="validateForm()" name="message" rows="5" placeholder="Message" ></textarea>
                               <span id="msg5"  style="color: red;"></span>
+=======
+                              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" ></textarea>
+>>>>>>> origin/main
                             </div>
                           </div>
                           <div class="col-md-12 text-center my-3">
@@ -438,7 +457,11 @@
                             <button type="submit" class="button button-a button-big button-rouded" onclick="validateForm()">Send Message</button>
                           </div>
                           <div class="errmsg"> 
+<<<<<<< HEAD
                             
+=======
+                            <span id="msg1"></span>
+>>>>>>> origin/main
                             <span id="msg"></span>
                           </div>
                          
@@ -516,7 +539,11 @@
         if(validateForm()){
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
+<<<<<<< HEAD
               alert("form submitted suceesfully")
+=======
+              msg.innerHTML = "Sent Successfully"
+>>>>>>> origin/main
               // alert("Sent Successfully")
               setTimeout(function(){
                 msg.innerHTML = ""
